@@ -1,0 +1,495 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ffc99a;
+}
+
+/* NAV--------------------------START */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 1vw 2vw 1vw;
+}
+
+#hamBurger {
+    width: 2vw;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#hamBurger:hover {
+    transform: rotate(-15deg);
+}
+
+.con-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5vw;
+}
+
+.con-logo h2 {
+    color: #FFF;
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+
+.con-home ul {
+    display: flex;
+    list-style: none;
+}
+
+.con-home ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 2.5vw;
+    font-weight: 600;
+    font-size: 0.9vw;
+    padding-bottom: 1vw;
+}
+
+.con-home ul li a:hover {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.con-all-line {
+    margin-right: 1.5vw;
+    cursor: pointer;
+}
+
+.con-line-img img {
+    width: 1.3vw;
+    font-weight: 600;
+    object-fit: cover;
+}
+
+/* NAV--------------------------END */
+
+/* HERO--------------------------START */
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-left {
+    justify-content: center;
+    align-items: center;
+}
+
+.con-text-show button {
+    background-color: #fff;
+    border: none;
+    color: #FF7A04;
+    padding: 1.7vw 1.7vw;
+    border-radius: 1vw;
+    font-size: 1.05vw;
+    letter-spacing: 0.3vw;
+    font-weight: 600;
+    position: relative;
+    line-height: 2.2vw;
+    margin-bottom: 1vw;
+}
+
+.con-text-show button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    border-radius: 1vw;
+    transform: rotate(-8deg);
+    background-color: #fff;
+    opacity: 75%;
+    z-index: -5;
+}
+
+.con-text-h1 {
+    margin-top: 1.5vw;
+}
+
+.con-text-h1 p {
+    color: #fff;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.con-text-h1 h1 {
+    color: #fff;
+    font-size: 4.7vw;
+    font-family: 600;
+    letter-spacing: 0.2vw;
+    line-height: 5.2vw;
+}
+
+.con-explore {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+}
+
+.con-explore button {
+    border: none;
+    color: #FF7A04;
+    background-color: #fff;
+    padding: 1.3vw 3.3vw;
+    border-radius: 0.7vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.con-explore button:hover {
+    color: #fff;
+    background-color: #FF7A04;
+    transform: scale(1.02);
+}
+
+.con-exp-get {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5vw;
+}
+
+.con-exp-get i {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5vw;
+    height: 4.5vw;
+    border: 0.25vw solid #fff;
+    border-radius: 50%;
+    font-size: 2.5vw;
+    font-weight: 600;
+    padding-left: 0.3vw;
+    cursor: pointer;
+}
+
+.con-exp-get i:hover {
+    color: #FF7A04;
+    border: 0.25vw solid #FF7A04;
+}
+
+.con-exp-get h2 {
+    font-weight: normal;
+    font-size: 1.5vw;
+    margin-left: 1.5vw;
+}
+
+.con-exp-get a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 0;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.con-exp-get a:hover {
+    color: #FF7A04;
+    text-decoration: underline;
+}
+
+.hero-left-all {
+    margin-top: 10vw;
+    margin-left: 3vw;
+}
+
+.burger-Bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.burger-Hero {
+    object-fit: cover;
+    width: 50vw;
+}
+
+/* HERO--------------------------END */
+
+
+/* HOTITEM--------------------------START */
+
+.con-hot {
+    margin-top: 15vw;
+    margin-bottom: 10vw;
+}
+
+.hot-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hot-item h1 {
+    color: #fff;
+    font-size: 2.5vw;
+    letter-spacing: 0.4vw;
+}
+
+.hot-item i {
+    font-size: 2.5vw;
+    color: #fff;
+    margin-left: 1vw;
+    margin-right: 2vw;
+}
+
+.iconSliceR {
+    transform: rotate(-45deg);
+}
+
+.iconSliceL {
+    transform: rotate(45deg);
+}
+
+.hot-item-text {
+    text-align: center;
+}
+
+.hot-item-text p {
+    color: #fff;
+    font-size: 1.1vw;
+    padding: 1vw 1vw;
+    letter-spacing: 0.2vw;
+    font-weight: normal;
+}
+
+/* HOTITEM--------------------------END */
+
+/* MAIN FOOD--------------------------START */
+
+.main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.con-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1vw
+}
+
+.main-info {
+    background-color: #FF8616;
+    padding: 1vw 1.4vw;
+    width: 65%;
+    border-radius: 1vw;
+    cursor: pointer;
+    border-radius: 1vw;
+}
+
+#inFO-1:hover {
+    transform: rotate(-4deg);
+}
+
+#inFo-2:hover {
+    transform: rotate(4deg);
+}
+
+.info-img {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.infoHamimg {
+    object-fit: cover;
+    width: 18vw;
+    margin-top: 6vw;
+}
+
+.info-text {
+    text-align: center;;
+}
+
+.info-text p {
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.info-text2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.info-text2 p {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text-bag i {
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gridImg {
+    cursor: pointer;
+}
+
+#gridImg:hover {
+    transform: scale(1.03);
+}
+
+/* MAIN FOOD--------------------------END */
+
+/* BANNER SALE--------------------------START */
+
+.banner {
+    background-color: #F47200;
+    margin-top: 15vw;
+}
+
+.con-ban-1 {
+    display: flex;
+    align-items: center;
+}
+
+.con-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* banner left */
+
+.banner-left h2 {
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.banner-left h1 {
+    color: #fff;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.banner-left {
+    line-height: 3.4vw;
+    margin-left: 12vw;
+    width: 20vw;
+}
+
+
+.left-btn {
+    margin-top: 1vw;
+}
+
+.left-btn button {
+    border: none;
+    color: #F47200;
+    background-color: #fff;
+    font-size: 2vw;
+    font-weight: 400;
+    padding: 0.5vw 3.5vw;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 40vw;
+}
+
+.left-btn button:hover {
+    color: #fff;
+    background-color: #7c3c04;
+    font-weight: 600;
+    transform: scale(0.98);
+    transform: rotate(-1.5deg);
+}
+
+/* banner right */
+
+.right-img img {
+    object-fit: cover;
+    width: 65vw;
+    height: 35vw;
+}
+
+/* BANNER SALE--------------------------END */
+
+/* FOOTER--------------------------START */
+
+.icon-git {
+    text-align: center;
+    font-size: 2vw;
+    background-color: #000;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-git a {
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    font-size: 0.8vw;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+footer a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    border-left: 2px solid #fff;
+    animation: footerATyping 6s steps(40) infinite;
+}
+
+@keyframes footerATyping {
+    70%{
+        left: 100%;
+        margin: 0 0.5vw;
+    }
+}
+
+#iconCode {
+    margin-left: 0.5vw;
+}
+
+
+/* FOOTER--------------------------END */
